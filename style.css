@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #98ddff;
+    color: #700000;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 14px;
+}
+
+.nav a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #700000;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    opacity: 0.7;
+}
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    position: relative;
+}
+
+.hero-text {
+    max-width: 420px;
+}
+
+.hero-text h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    font-family: 'Pacifico', sans-serif;
+    color: #fff;
+}
+ 
+.hero-text h1 span {
+    display: block;
+    color: #df0000;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    font-size: 15px;
+    opacity: 0.8;
+    color: #520000;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #df0000;
+    border: none;
+    color: #ffb1b1;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #700000;
+}
+
+.hero-img img {
+    width: 400px;
+    margin-left: 100px;
+}
+
+.subscribe {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    text-align: right;
+    font-size: 28px;
+    color: #fff;
+    opacity: 0.9;
+    line-height: 0.9;
+}
