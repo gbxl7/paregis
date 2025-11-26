@@ -17,6 +17,64 @@ body {
 
 /* ---------- Header ---------- */
 
+.ri-user-fill{
+    margin-left: 5px;
+}
+
+.ri-shut-down-line{
+    margin-left: 5px;
+}
+
+.menu-container {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .hamburger {
+    width: 28px;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    height: 4px;
+    background-color: #0c1b33;
+    margin: 5px 0;
+    border-radius: 3px;
+  }
+  
+  /* menu oculto */
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 1040px;
+    background-color: #347aa3;
+    padding: 20px;
+    border-radius: 6px;
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+    margin-top: 50px;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+  
+  .menu hr {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    margin: 10px 0;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.136);
+  }
+
 .header {
     width: 100%;
     padding: 20px 80px;
@@ -29,12 +87,20 @@ body {
     font-size: 14px;
 }
 
+.header img{
+    width: 70px;
+}
+
 .nav a {
     margin-left: 40px;
     text-decoration: none;
     color: #700000;
     font-size: 14px;
     transition: 0.3s;
+}
+
+.header P{
+    margin-right: 50px;
 }
 
 .nav a:hover {
@@ -72,11 +138,12 @@ body {
     font-size: 15px;
     opacity: 0.8;
     color: #520000;
+    padding-bottom: 30px;
 }
 
 .btn {
-    margin-top: 25px;
-    padding: 12px 30px;
+    margin-bottom: 25px;
+    padding: 12px 40px;
     background: #df0000;
     border: none;
     color: #ffb1b1;
@@ -84,6 +151,7 @@ body {
     cursor: pointer;
     font-size: 15px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -92,7 +160,6 @@ body {
 
 .hero-img img {
     width: 400px;
-    margin-left: 100px;
 }
 
 .subscribe {
@@ -105,3 +172,4 @@ body {
     opacity: 0.9;
     line-height: 0.9;
 }
+

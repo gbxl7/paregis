@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    body {
+        background: #121212;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .search-container {
+        background: #5cc8f7; /* Azul claro como na imagem */
+        width: 600px;
+        padding: 12px 20px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .search-container img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .search-input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: #000;
+    }
+
+    .search-input::placeholder {
+        color: #000;
+        opacity: 0.7;
+    }
+
+    .search-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="search-container">
+    <img src="/mnt/data/4829a294-f1e0-41a7-b1d4-8f20347b2575.png" alt="Ícone">
+    <input type="text" id="search" class="search-input" placeholder="Qual doce você procura?">
+    <button class="search-btn" onclick="buscar()">
+        🔍
+    </button>
+</div>
+
+<script>
+function buscar() {
+    const valor = document.getElementById("search").value.trim();
+    if (valor === "") {
+        alert("Digite algo para buscar!");
+    } else {
+        alert("Você procurou por: " + valor);
+    }
+}
+</script>
+
+</body>
+</html>

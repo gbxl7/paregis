@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
     <title>Parégis - Sobremesas Geladas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header" data-aos="fade-down">
-    <div class="logo">Parégis <br> Sobremesas Geladas</div>
+    <img src="582427587_3246490355490478_2995613650377804647_n-removebg-preview.png" alt="">
+    <div class="logo"><P>Parégis <br> Sobremesas Geladas</P></div>
 
     <nav class="nav" data-aos="fade-down">
         <a href="#">Home</a>
@@ -18,7 +21,26 @@
         <a href="#">Preços</a>
         <a href="#">Contatos</a>
     </nav>
+      
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    
+      <div id="menu" class="menu">
+        <a href="#">Delivery</a>
+        <a href="#">Programa de Fidelidade</a>                                
+        <a href="#">Promoções</a>
+        
+        <hr>
+    
+        <a href="#" >Sua conta<i class="ri-user-fill"></i></a>
+        <a href="#">Sair<i class="ri-shut-down-line"></i></a>
+      </div>
 </header>
+
+<hr>
 
 <section class="hero">
     <div class="hero-text" data-aos="fade-right">
@@ -27,7 +49,7 @@
             parégis, a doceria que transforma ideias em sabor
         </p>
 
-        <button class="btn" data-aos="flip-right">Cardapio</button>
+        <a class="btn" href="Cardapio.html" data-aos="flip-right">Cardapio</a>
     </div>
 
     <div class="hero-img">
@@ -39,6 +61,12 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+
+    function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+
   </script>
 </body>
 </html>
